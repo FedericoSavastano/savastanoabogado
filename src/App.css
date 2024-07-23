@@ -135,6 +135,23 @@ a:hover {
 
 /* SERVICES */
 
+.title-bold {
+    font-weight: 800;
+}
+
+.btn-name {
+    vertical-align: 2.5px;
+    padding-left: 5px;
+}
+
+.full-button:hover svg {
+    filter: drop-shadow(0.5px 0.5px 2px rgb(0 0 0 / 0.4));
+}
+
+.full-button:hover .btn-name {
+    text-shadow: 0.5px 0.5px 2px black;
+}
+
 .grid-section {
     padding: 3rem 1rem;
 }
@@ -220,6 +237,7 @@ a:hover {
 
 .contact button:hover {
     box-shadow: 2px 2px 2px #795d04;
+    text-shadow: 0.5px 0.5px 2px black;
 }
 
 .social {
