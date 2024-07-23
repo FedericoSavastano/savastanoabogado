@@ -88,7 +88,13 @@ function Contact() {
                     <button type='submit'>Enviar</button>
                 </form>
 
-                <div className='social'>redes sociales instagram, whatsapp</div>
+                <div className='social'>
+                    <ul>
+                        <li>instagram</li>
+                        <li>whatsapp</li>
+                        <li>???</li>
+                    </ul>
+                </div>
             </div>
         </section>
     );
