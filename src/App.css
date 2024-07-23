@@ -185,7 +185,8 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    gap: 4rem;
+    min-height: 300px;
 }
 
 .contact form {
@@ -195,7 +196,7 @@ a:hover {
     flex: 1;
 }
 
-.social {
+.contact-message {
     flex: 1;
 }
 
@@ -219,6 +220,24 @@ a:hover {
 
 .contact button:hover {
     box-shadow: 2px 2px 2px #795d04;
+}
+
+.social {
+    flex: 1;
+}
+
+.social ul {
+    list-style: none;
+    list-style-position: outside;
+    padding: 0;
+}
+
+.social ul li {
+    margin: 1.5rem;
+}
+
+.full-button {
+    width: 100%;
 }
 
 .container {
