@@ -27,14 +27,10 @@ function Hero() {
         <section id='hero' className='hero'>
             <div className='container'>
                 <img src={savastanoLogo} alt='' />
-                <h2>
-                    Nuestro objetivo es la resolución de conflictos legales con
-                    celeridad y eficiencia
-                </h2>
-                <p>
-                    Nuestros valores son la responsabilidad, transparencia y
-                    confidencialidad.
-                </p>
+                <h3 className='phrase'>
+                    Resolución eficiente de conflictos legales con
+                    responsabilidad, transparencia y confidencialidad
+                </h3>
             </div>
         </section>
     );
@@ -42,26 +38,29 @@ function Hero() {
 
 function Services() {
     const servicesList = [
-        { title: 'Derecho Civil', desc: 'divorcios, sucesiones, etc, etc' },
+        {
+            title: 'Derecho Civil',
+            desc: 'Solución de conflictos entre particulares',
+        },
         {
             title: 'Derecho Laboral',
-            desc: 'despidos, accidentes, robos',
+            desc: 'Defensa de derechos laborales y relaciones de trabajo',
         },
         {
             title: 'Derecho de seguros',
-            desc: 'descripcion descripcion ......',
+            desc: 'Asesoría y reclamos de seguros',
         },
         {
             title: 'Accidentes de tránsito',
-            desc: 'descripcion descripcion ......',
+            desc: 'Reclamos por daños en siniestros viales',
         },
         {
             title: 'Accidentes de trabajo y enfermedades profesionales',
-            desc: 'descripcion descripcion ......',
+            desc: 'Indemnización por accidentes laborales y enfermedades',
         },
         {
             title: 'Jubilaciones',
-            desc: 'descripcion descripcion ......',
+            desc: 'Gestión de trámites previsionales y jubilatorios',
         },
     ];
 
@@ -79,6 +78,213 @@ function Services() {
                         </div>
                     ))}
                 </div>
+            </div>
+        </section>
+    );
+}
+
+function Faq() {
+    return (
+        <section id='faq' className='grid-section'>
+            <div className='container faq'>
+                <h2>Preguntas frecuentes</h2>
+
+                <details className='grid-item'>
+                    <summary className='title title-bold'>
+                        Sobre accidentes de tránsito
+                    </summary>
+                    <ul>
+                        <li>
+                            <p className='question'>
+                                ¿Qué necesito para reclamar por un accidente de
+                                tránsito?
+                            </p>
+                            <p>
+                                Si sos peatón, ciclista o pasajero: Datos del
+                                vehículo y conductor (nombre, documento,
+                                domicilio). Certificados médicos, gastos médicos
+                                y de transporte, fotos de lesiones y
+                                recuperación. Testigos del accidente (nombre,
+                                documento, teléfono). DNI. Si conducías tu
+                                propio vehículo: Además de lo anterior,
+                                necesitarás cédula verde, licencia, seguro, VTV
+                                y fotos del vehículo.
+                            </p>
+                        </li>
+                        <li>
+                            <p className='question'>
+                                ¿Cuánto tiempo tengo para denunciar el siniestro
+                                en mi seguro?
+                            </p>
+                            <p>
+                                72 horas. Si estás lesionado, un familiar puede
+                                hacer la denuncia. Algunas aseguradoras permiten
+                                hacerlo por teléfono o web.
+                            </p>
+                        </li>
+                        <li>
+                            <p className='question'>
+                                ¿Dónde hago la denuncia penal?{' '}
+                            </p>
+                            <p>
+                                En la comisaría correspondiente o en la Oficina
+                                de Denuncias del Ministerio Público Fiscal.
+                            </p>
+                        </li>
+                        <li>
+                            <p className='question'>
+                                ¿Qué pasa si el otro conductor no denuncia en su
+                                seguro?
+                            </p>
+                            <p>
+                                Debes enviarle una carta documento para que lo
+                                haga.
+                            </p>
+                        </li>
+                    </ul>
+                </details>
+                <details className='grid-item'>
+                    <summary className='title title-bold'>
+                        Sobre sucesiones
+                    </summary>
+                    <ul>
+                        <li>
+                            <p className='question'>
+                                ¿Puedo vender la propiedad o el vehículo de un
+                                familiar fallecido sin hacer la sucesión?
+                            </p>
+                            <p>
+                                No. La venta puede hacerse mediante tracto
+                                abreviado sin necesidad de inscribir el bien a
+                                nombre del heredero.
+                            </p>
+                        </li>
+                        <li>
+                            <p className='question'>
+                                ¿Qué documentos necesito para iniciar la
+                                sucesión?
+                            </p>
+                            <p>
+                                Se requiere certificado de defunción, partida de
+                                matrimonio, partidas de nacimiento de los hijos,
+                                escritura de propiedad o título automotor,
+                                constancia de CUIT y DNI de los herederos.
+                            </p>
+                        </li>
+                        <li>
+                            <p className='question'>
+                                Si el fallecido tenía varios bienes, ¿puedo
+                                hacer la sucesión de solo uno?
+                            </p>
+                            <p>
+                                Es recomendable incluir todos los bienes en la
+                                sucesión, pero puedes inscribir solo uno luego
+                                de obtener la declaratoria de herederos.
+                            </p>
+                        </li>
+                        <li>
+                            <p className='question'>
+                                ¿Debo inscribir la propiedad a mi nombre tras la
+                                sucesión?
+                            </p>
+                            <p>
+                                No es necesario si planeas venderla. El
+                                comprador la adquirirá por tracto abreviado.
+                            </p>
+                        </li>
+                    </ul>
+                </details>
+                <details className='grid-item'>
+                    <summary className='title title-bold'>
+                        Sobre derecho laboral
+                    </summary>
+                    <ul>
+                        <li>
+                            <p className='question'>
+                                ¿Debe el empleador pagarme si me enfermo por
+                                causas ajenas al trabajo?
+                            </p>
+                            <p>
+                                Sí. El empleador debe pagar el salario hasta 3 o
+                                6 meses, dependiendo de la antigüedad (menos o
+                                más de 5 años). Si tienes familia a cargo, el
+                                plazo se extiende a 6 o 12 meses.
+                            </p>
+                        </li>
+                        <li>
+                            <p className='question'>
+                                ¿Qué salario recibo durante la licencia por
+                                enfermedad?
+                            </p>
+                            <p>
+                                Recibes el mismo salario que percibías al
+                                enfermarte, con los aumentos que se otorguen
+                                durante tu licencia. Si tu salario es variable,
+                                se calculará el promedio del último semestre.
+                            </p>
+                        </li>
+                        <li>
+                            <p className='question'>
+                                ¿Qué hago si sufro un accidente o enfermedad
+                                laboral?
+                            </p>
+                            <p>
+                                Debes notificar inmediatamente a tu empleador y
+                                a la ART contratada, por teléfono o a través de
+                                los medios que proporcionen para emergencias.
+                            </p>
+                        </li>
+                    </ul>
+                </details>
+                <details className='grid-item'>
+                    <summary className='title title-bold'>
+                        Sobre seguros
+                    </summary>
+                    <ul>
+                        <li>
+                            <p className='question'>
+                                ¿Cuándo se considera destrucción total del
+                                vehículo?
+                            </p>
+                            <p>
+                                Cuando el costo de reparación supera el 80% del
+                                valor del vehículo.
+                            </p>
+                        </li>
+                        <li>
+                            <p className='question'>
+                                ¿Cuánto tiempo tiene la aseguradora para
+                                responder a una denuncia?
+                            </p>
+                            <p>
+                                La aseguradora tiene 30 días corridos. Si pide
+                                más información, el plazo comienza al recibirla
+                                completa.
+                            </p>
+                        </li>
+                        <li>
+                            <p className='question'>
+                                ¿Para qué sirve un seguro de caución?
+                            </p>
+                            <p>
+                                Garantiza el cumplimiento de obligaciones no
+                                financieras mediante un contrato de seguro.
+                            </p>
+                        </li>
+                        <li>
+                            <p className='question'>
+                                ¿Qué pasa si la aseguradora rechaza la cobertura
+                                por reticencia?
+                            </p>
+                            <p>
+                                La aseguradora puede rechazar la cobertura si se
+                                ocultó información relevante que afecte el
+                                riesgo, siempre que exista relación entre lo
+                                omitido y el siniestro.
+                            </p>
+                        </li>
+                    </ul>
+                </details>
             </div>
         </section>
     );
@@ -261,6 +467,7 @@ function App() {
             <NavBar></NavBar>
             <Hero></Hero>
             <Services></Services>
+            <Faq></Faq>
             <Contact></Contact>
             <Footer></Footer>
         </>

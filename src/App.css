@@ -81,6 +81,11 @@ a:hover {
 .hero {
 }
 
+.phrase {
+    font-weight: 400;
+    font-style: italic;
+}
+
 /* NAVBAR */
 
 .navbar {
@@ -185,7 +190,21 @@ a:hover {
 .grid-item:hover {
     box-shadow: 1px 1px 1px #dabb54;
 }
+/* FAQ */
+.faq {
+    display: grid;
+    gap: 20px;
+    cursor: pointer;
+}
+.faq h2 {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
 
+.question {
+    font-style: italic;
+    font-weight: 200;
+}
 /* CONTACT */
 
 .contact {
@@ -290,14 +309,21 @@ a:hover {
 
     .container-contact {
         flex-direction: column;
+        width: 80%;
     }
 
     .social {
-        padding: 50px;
+        padding: 50px 20px 1px 1px;
+        width: 100%;
     }
 
     .grid-item {
         flex: 1 1 100%;
+    }
+
+    .contact form {
+        width: 100%;
+        padding-right: 6%;
     }
     /* 
     .navbar ul {
