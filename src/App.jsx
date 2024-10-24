@@ -90,7 +90,7 @@ function Faq() {
                 <h2>Preguntas frecuentes</h2>
 
                 <details className='grid-item'>
-                    <summary className='title title-bold'>
+                    <summary className='title title-bold summary-size'>
                         Sobre accidentes de tránsito
                     </summary>
                     <ul>
@@ -144,7 +144,7 @@ function Faq() {
                     </ul>
                 </details>
                 <details className='grid-item'>
-                    <summary className='title title-bold'>
+                    <summary className='title title-bold summary-size'>
                         Sobre sucesiones
                     </summary>
                     <ul>
@@ -195,7 +195,7 @@ function Faq() {
                     </ul>
                 </details>
                 <details className='grid-item'>
-                    <summary className='title title-bold'>
+                    <summary className='title title-bold summary-size'>
                         Sobre derecho laboral
                     </summary>
                     <ul>
@@ -237,7 +237,7 @@ function Faq() {
                     </ul>
                 </details>
                 <details className='grid-item'>
-                    <summary className='title title-bold'>
+                    <summary className='title title-bold summary-size'>
                         Sobre seguros
                     </summary>
                     <ul>
